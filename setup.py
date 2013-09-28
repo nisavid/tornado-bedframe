@@ -31,7 +31,7 @@ with open('README.rst') as f:
     long_description = f.read()
 
 distutils.core.setup(
-    name="tornado",
+    name='tornado-bedframe',
     version=version,
     packages = ["tornado", "tornado.test", "tornado.platform"],
     package_data = {
