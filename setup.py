@@ -132,7 +132,7 @@ if setuptools is not None:
         kwargs['install_requires'] = ['backports.ssl_match_hostname']
 
 setup(
-    name="tornado",
+    name="tornado-bedframe",
     version=version,
     packages = ["tornado", "tornado.test", "tornado.platform"],
     package_data = {
