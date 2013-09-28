@@ -140,7 +140,9 @@ class HTTPRequest(object):
         """Parses the given WSGI environment to construct the request."""
         self.method = environ["REQUEST_METHOD"]
         self.path = urllib_parse.quote(from_wsgi_str(environ.get("SCRIPT_NAME", "")))
-        self.path += urllib_parse.quote(from_wsgi_str(environ.get("PATH_INFO", "")))
+        self.path += urllib_parse.quote(from_wsgi_str(environ.get("PATH_INFO",
+                                                                  "")),
+                                        safe='/!$&\'()*+,;=')
         self.uri = self.path
         self.arguments = {}
         self.query_arguments = {}
