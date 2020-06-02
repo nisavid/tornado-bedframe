@@ -11,7 +11,7 @@ pycares==0.5.0
 pycurl==7.19.0.3
 
 # Other useful tools
-Sphinx==1.2
+Sphinx==3.0.4
 autopep8==0.9.7
 coverage==3.7.1
 pep8==1.4.6
